@@ -1,4 +1,4 @@
-name: main
+name:welshymaply
 on:
   schedule:
     - cron: "0 */4 * * *"
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: main
+    name:welshymaply 
     runs-on: ubuntu-latest
     steps:
       - if: ${{ startsWith(github.event_name, 'repository_dispatch') }}
@@ -24,8 +24,8 @@ jobs:
 
       - run: pip install -r requirements-dev.txt
 
-      - name: set git config
-        run: |
+      - name:welshymaply 
+        run: |50
           git config user.name 'Github Actions'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
